@@ -11,12 +11,13 @@ from database import (
     upsert_user, get_user_nickname, get_history, log_msg, get_random_asset,
     increment_message_count, send_expiry_reminder_if_needed, can_send_message,
     is_joined_all_channels, get_all_channels, get_db, add_asset, block_user,
-    unblock_user, add_admin, remove_admin, add_channel, remove_channel
+    unblock_user, add_admin, remove_admin, add_channel, remove_channel,
+    get_user_relation
 )
 from utils import (
     is_blocked, is_suspicious_question, has_personal_info_request,
     SUSPICIOUS_REPLIES, PERSONAL_INFO_REPLIES, filter_ai_response,
-    is_admin, is_owner, get_user_relation, OWNER_ID
+    is_admin, is_owner, OWNER_ID
 )
 from ai import call_ai_with_fallback
 from keyboards import (
