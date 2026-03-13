@@ -4,6 +4,7 @@ from database import (
     is_joined_all_channels, clear_user_data, clear_all_messages,
     wipe_all_except_users, is_admin
 )
+from utils import is_admin
 from keyboards import get_user_keyboard, get_contact_owner_keyboard
 from config import logger
 
