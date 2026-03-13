@@ -5,9 +5,8 @@ import telegram.error
 from telegram import Update
 from telegram.constants import ChatAction
 from telegram.ext import ContextTypes
-from config import (
-    logger, get_routine_context, ALYA_SYSTEM_PROMPT,  # Note: ALYA_SYSTEM_PROMPT should be defined in config or a separate file. For brevity, we'll assume it's in config.
-)
+from config import logger, get_routine_context
+from prompts import ALYA_SYSTEM_PROMPT
 from database import (
     upsert_user, get_user_nickname, get_history, log_msg, get_random_asset,
     increment_message_count, send_expiry_reminder_if_needed, can_send_message,
